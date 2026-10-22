@@ -2,28 +2,34 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
+<!-- Todos os caminhos locais são relativos a este index.html; compatível com GitHub Pages (inclusive sites de projeto). -->
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Giro Livre | Futebol, debate e resenha</title>
 <meta name="description" content="Giro Livre: canal multiplataforma de comunicação esportiva com futebol, debate, opinião, entrevistas e muita resenha no YouTube, Instagram e Facebook.">
-<link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+<link rel="icon" href="./favicon.png" sizes="32x32" type="image/png">
 <script>
-document.addEventListener('error',function(e){var t=e.target;if(!t||t.tagName!=='IMG')return;
-if(t.dataset.fb&&!t.dataset.tried){t.dataset.tried='1';t.src=t.dataset.fb;return;}
-var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
+document.addEventListener('error', function (e) {
+  var img = e.target;
+  if (!img || img.tagName !== 'IMG') return;
+
+  img.classList.add('is-broken');
+  var card = img.closest('.sponsor-card');
+  if (card) card.classList.add('is-broken');
+}, true);
 </script>
 <link href="https://fonts.googleapis.com" rel="preconnect">
 <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500&family=Jost:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link href="bootstrap.min.css" rel="stylesheet">
-<link href="bootstrap-icons.css" rel="stylesheet">
-<link href="aos.css" rel="stylesheet">
-<link href="main.css" rel="stylesheet">
-<link href="main.min.css" rel="stylesheet">
+<link href="./bootstrap.min.css" rel="stylesheet">
+<link href="./bootstrap-icons.css" rel="stylesheet">
+<link href="./aos.css" rel="stylesheet">
+<link href="./main.css" rel="stylesheet">
+<link href="./main.min.css" rel="stylesheet">
 </head>
 <body class="index-page">
 <header id="header" class="header d-flex align-items-center fixed-top">
 <div class="container-fluid container-xl position-relative d-flex align-items-center">
-<a href="index.html" class="logo d-flex align-items-center me-auto">
+<a href="./index.html" class="logo d-flex align-items-center me-auto">
 <h1 class="sitename">Giro Livre</h1>
 </a>
 <nav id="navmenu" class="navmenu">
@@ -34,7 +40,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <li><a href="#quadros">Programação</a></li>
 <li><a href="#services">Serviços</a></li>
 <li><a href="#faq-2">Perguntas Frequentes</a></li>
-<li><a href="#recent-blog-postst">Conteúdos</a></li>
+<li><a href="#recent-blog-posts">Conteúdos</a></li>
 </ul>
 <i class="mobile-nav-toggle d-xl-none bi bi-list" role="button" tabindex="0" aria-label="Abrir/fechar menu" aria-expanded="false"></i>
 </nav>
@@ -52,7 +58,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 </div>
 </div>
 <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="200">
-<img src="hero.png" data-fb="logo.png" class="img-fluid animated" alt="Giro Livre: futebol, debate e resenha" fetchpriority="high">
+<img src="./hero.png" data-fb="./logo.png" class="img-fluid animated" alt="Giro Livre: futebol, debate e resenha" fetchpriority="high">
 </div>
 </div>
 </div>
@@ -67,7 +73,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="dacredi.png" data-fb="file:///c:/Users/08389/Giro%20Livre/Dacredi.png" alt="Logo Dacredi" loading="lazy" decoding="async">
+<img src="./dacredi.png" alt="Logo Dacredi" loading="lazy" decoding="async">
 </div>
 <figcaption>Dacredi</figcaption>
 </figure>
@@ -75,7 +81,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="titan-academia.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/titan%20academia.jpg" alt="Logo Titan Academia" loading="lazy" decoding="async">
+<img src="./titan-academia.jpg" alt="Logo Titan Academia" loading="lazy" decoding="async">
 </div>
 <figcaption>Titan Academia</figcaption>
 </figure>
@@ -83,7 +89,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="onew.png" data-fb="file:///c:/Users/08389/Giro%20Livre/onew.png" alt="Logo OneW" loading="lazy" decoding="async">
+<img src="./onew.png" alt="Logo OneW" loading="lazy" decoding="async">
 </div>
 <figcaption>OneW</figcaption>
 </figure>
@@ -91,7 +97,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="sacolao.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/sacol%C3%A3o.jpg" alt="Logo Sacolão" loading="lazy" decoding="async">
+<img src="./sacolao.jpg" alt="Logo Sacolão" loading="lazy" decoding="async">
 </div>
 <figcaption>Sacolão</figcaption>
 </figure>
@@ -99,7 +105,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="tenda-gringo.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/tenda%20gringo.jpg" alt="Logo Tenda Gringo" loading="lazy" decoding="async">
+<img src="./tenda-gringo.jpg" alt="Logo Tenda Gringo" loading="lazy" decoding="async">
 </div>
 <figcaption>Tenda Gringo</figcaption>
 </figure>
@@ -107,7 +113,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="vts-sports-rs.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/vts%20sports%20rs.jpg" alt="Logo VTS Sports RS" loading="lazy" decoding="async">
+<img src="./vts-sports-rs.jpg" alt="Logo VTS Sports RS" loading="lazy" decoding="async">
 </div>
 <figcaption>VTS Sports RS</figcaption>
 </figure>
@@ -115,7 +121,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="r2ft.png" data-fb="file:///c:/Users/08389/Giro%20Livre/R2FT.png" alt="Logo R2FT" loading="lazy" decoding="async">
+<img src="./r2ft.png" alt="Logo R2FT" loading="lazy" decoding="async">
 </div>
 <figcaption>R2FT</figcaption>
 </figure>
@@ -123,7 +129,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="lagoa-jardim.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/lagoa%20jardim.jpg" alt="Logo Lagoa Jardim" loading="lazy" decoding="async">
+<img src="./lagoa-jardim.jpg" alt="Logo Lagoa Jardim" loading="lazy" decoding="async">
 </div>
 <figcaption>Lagoa Jardim</figcaption>
 </figure>
@@ -131,7 +137,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="alemoa.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/alemoa.jpg" alt="Logo Alemoa" loading="lazy" decoding="async">
+<img src="./alemoa.jpg" alt="Logo Alemoa" loading="lazy" decoding="async">
 </div>
 <figcaption>Alemoa</figcaption>
 </figure>
@@ -139,7 +145,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="agostini.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/agostini.jpg" alt="Logo Agostini" loading="lazy" decoding="async">
+<img src="./agostini.jpg" alt="Logo Agostini" loading="lazy" decoding="async">
 </div>
 <figcaption>Agostini</figcaption>
 </figure>
@@ -147,7 +153,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="comercio-campestre-clube.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/com%C3%A9rcio%20campestre%20clube.jpg" alt="Logo Comércio Campestre Clube" loading="lazy" decoding="async">
+<img src="./comercio-campestre-clube.jpg" alt="Logo Comércio Campestre Clube" loading="lazy" decoding="async">
 </div>
 <figcaption>Comércio Campestre Clube</figcaption>
 </figure>
@@ -155,7 +161,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="lincoln-terapeuta.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/lincoln%20terapeuta.jpg" alt="Logo Lincoln Terapeuta" loading="lazy" decoding="async">
+<img src="./lincoln-terapeuta.jpg" alt="Logo Lincoln Terapeuta" loading="lazy" decoding="async">
 </div>
 <figcaption>Lincoln Terapeuta</figcaption>
 </figure>
@@ -163,7 +169,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="0">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="clients/maqsinos.png" data-fb="file:///c:/Users/08389/Giro%20Livre/maqsinos.png" alt="Logo Maqsinos" loading="lazy" decoding="async">
+<img src="./clients/maqsinos.png" alt="Logo Maqsinos" loading="lazy" decoding="async">
 </div>
 <figcaption>Maqsinos</figcaption>
 </figure>
@@ -171,7 +177,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="80">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="master-grife.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/master%20grife.jpg" alt="Logo Master Grife" loading="lazy" decoding="async">
+<img src="./master-grife.jpg" alt="Logo Master Grife" loading="lazy" decoding="async">
 </div>
 <figcaption>Master Grife</figcaption>
 </figure>
@@ -179,7 +185,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="160">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="gjb-ferreira.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/gjb%20ferreira.jpg" alt="Logo GJB Ferreira" loading="lazy" decoding="async">
+<img src="./gjb-ferreira.jpg" alt="Logo GJB Ferreira" loading="lazy" decoding="async">
 </div>
 <figcaption>GJB Ferreira</figcaption>
 </figure>
@@ -187,7 +193,7 @@ var c=t.closest('.sponsor-card');if(c)c.classList.add('is-broken');},true);
 <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="240">
 <figure class="sponsor-card">
 <div class="sponsor-logo">
-<img src="trackon.jpg" data-fb="file:///c:/Users/08389/Giro%20Livre/TrackON.jpg" alt="Logo TrackON" loading="lazy" decoding="async">
+<img src="./trackon.jpg" alt="Logo TrackON" loading="lazy" decoding="async">
 </div>
 <figcaption>TrackON</figcaption>
 </figure>
@@ -253,7 +259,7 @@ Descubra em detalhes o que move o nosso ecossistema esportivo, quem faz acontece
 </div>
 </div>
 <div class="col-lg-5 order-1 order-lg-2 why-us-img">
-<img src="assets/img/why-us.png" data-fb="file:///c:/Users/08389/Downloads/ChatGPT%20Image%2030%20de%20set.%20de%202026%2C%2020_20_41.png" class="img-fluid" alt="Bastidores e equipe do Giro Livre" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-delay="100">
+<img src="./assets/img/why-us.png" class="img-fluid" alt="Bastidores e equipe do Giro Livre" loading="lazy" decoding="async" data-aos="zoom-in" data-aos-delay="100">
 </div>
 </div>
 </div>
@@ -358,7 +364,7 @@ Descubra em detalhes o que move o nosso ecossistema esportivo, quem faz acontece
 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
 <div class="steps-item">
 <div class="steps-image">
-<img src="assets/img/step-1.png" data-fb="file:///c:/Users/08389/Downloads/ChatGPT%20Image%2030%20de%20set.%20de%202026%2C%2020_29_12.png" alt="Etapa 1" class="img-fluid" loading="lazy" decoding="async">
+<img src="./assets/img/step-1.png" alt="Etapa 1" class="img-fluid" loading="lazy" decoding="async">
 </div>
 <div class="steps-content">
 <div class="steps-number">01</div>
@@ -384,7 +390,7 @@ Descubra em detalhes o que move o nosso ecossistema esportivo, quem faz acontece
 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
 <div class="steps-item">
 <div class="steps-image">
-<img src="assets/img/step-2.png" data-fb="file:///c:/Users/08389/Downloads/ChatGPT%20Image%2030%20de%20set.%20de%202026%2C%2020_30_06.png" alt="Etapa 2" class="img-fluid" loading="lazy" decoding="async">
+<img src="./assets/img/step-2.png" alt="Etapa 2" class="img-fluid" loading="lazy" decoding="async">
 </div>
 <div class="steps-content">
 <div class="steps-number">02</div>
@@ -410,7 +416,7 @@ Descubra em detalhes o que move o nosso ecossistema esportivo, quem faz acontece
 <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
 <div class="steps-item">
 <div class="steps-image">
-<img src="assets/img/step-3.png" data-fb="file:///c:/Users/08389/Downloads/ChatGPT%20Image%2030%20de%20set.%20de%202026%2C%2020_31_28.png" alt="Etapa 3" class="img-fluid" loading="lazy" decoding="async">
+<img src="./assets/img/step-3.png" alt="Etapa 3" class="img-fluid" loading="lazy" decoding="async">
 </div>
 <div class="steps-content">
 <div class="steps-number">03</div>
@@ -437,7 +443,7 @@ Descubra em detalhes o que move o nosso ecossistema esportivo, quem faz acontece
 </div>
 </section>
 <section id="call-to-action" class="call-to-action section dark-background">
-<img src="assets/img/cta-bg.png" data-fb="file:///c:/Users/08389/Downloads/ChatGPT%20Image%2030%20de%20set.%20de%202026%2C%2019_25_29.png" alt="" loading="lazy" decoding="async">
+<img src="./assets/img/cta-bg.png" alt="" loading="lazy" decoding="async">
 <div class="container">
 <div class="row" data-aos="zoom-in" data-aos-delay="100">
 <div class="col-xl-9 text-center text-xl-start">
@@ -530,13 +536,13 @@ Acompanhe nossos programas ao vivo, descubra nossa grade de quadros ou traga sua
 </div>
 <div class="col-lg-4">
 <div class="cta-image" data-aos="zoom-out" data-aos-delay="200">
-<img src="assets/img/subscribe.png" data-fb="file:///c:/Users/08389/Downloads/ChatGPT%20Image%2030%20de%20set.%20de%202026%2C%2020_43_07.png" alt="Giro Livre nas redes sociais" class="img-fluid" loading="lazy" decoding="async">
+<img src="./assets/img/subscribe.png" alt="Giro Livre nas redes sociais" class="img-fluid" loading="lazy" decoding="async">
 </div>
 </div>
 </div>
 </div>
 </section>
-<section id="recent-blog-postst" class="recent-blog-postst section light-background">
+<section id="recent-blog-posts" class="recent-blog-posts section light-background">
 <div class="container section-title" data-aos="fade-up">
 <h2>Últimos Conteúdos</h2>
 <p>Confira as últimas notícias, debates, entrevistas e histórias que movimentam o mundo dos esportes.</p>
@@ -546,7 +552,7 @@ Acompanhe nossos programas ao vivo, descubra nossa grade de quadros ou traga sua
 <div class="col-xl-4 col-md-6">
 <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
 <div class="post-img position-relative overflow-hidden">
-<img src="assets/img/post-1.png" data-fb="file:///c:/Users/08389/Giro%20Livre/1%C2%B0.png" class="img-fluid" alt="Capa do conteúdo 1" loading="lazy" decoding="async">
+<img src="./assets/img/post-1.png" class="img-fluid" alt="Capa do conteúdo 1" loading="lazy" decoding="async">
 <span class="post-date">12 Dez</span>
 </div>
 <div class="post-content d-flex flex-column">
@@ -568,7 +574,7 @@ Acompanhe nossos programas ao vivo, descubra nossa grade de quadros ou traga sua
 <div class="col-xl-4 col-md-6">
 <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
 <div class="post-img position-relative overflow-hidden">
-<img src="assets/img/post-2.png" data-fb="file:///c:/Users/08389/Pictures/Screenshots/Captura%20de%20tela%202026-10-06%20195312.png" class="img-fluid" alt="Capa do conteúdo 2" loading="lazy" decoding="async">
+<img src="./assets/img/post-2.png" class="img-fluid" alt="Capa do conteúdo 2" loading="lazy" decoding="async">
 <span class="post-date">17 Jul</span>
 </div>
 <div class="post-content d-flex flex-column">
@@ -590,7 +596,7 @@ Acompanhe nossos programas ao vivo, descubra nossa grade de quadros ou traga sua
 <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
 <div class="post-item position-relative h-100">
 <div class="post-img position-relative overflow-hidden">
-<img src="assets/img/post-3.png" data-fb="file:///c:/Users/08389/Giro%20Livre/3%C2%BA.png" class="img-fluid" alt="Capa do conteúdo 3" loading="lazy" decoding="async">
+<img src="./assets/img/post-3.png" class="img-fluid" alt="Capa do conteúdo 3" loading="lazy" decoding="async">
 <span class="post-date">05 Set</span>
 </div>
 <div class="post-content d-flex flex-column">
@@ -631,7 +637,7 @@ window.addEventListener('load', hide);
 setTimeout(hide, 3000);
 })();
 </script>
-<script src="assets/vendor/aos/aos.js" defer></script>
-<script src="main.min.js" defer></script>
+<script src="./assets/vendor/aos/aos.js" defer></script>
+<script src="./main.min.js" defer></script>
 </body>
 </html>
